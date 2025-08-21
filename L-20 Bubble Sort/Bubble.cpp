@@ -30,7 +30,34 @@ int main(){
     // }
 
 
-    // Sort in Descending order
+    // // Sort in Descending order
+    // // Bubble Sort
+    // int arr[100];
+    // int n;
+    // cin>>n;
+    // // Take array input
+    // for(int i=0; i<n; i++){
+    //     cin>>arr[i];
+    // }
+    // // Sort
+    // for(int i=n-2; i>=0; i--){
+    //     bool swapped=0;
+    //     for(int j=0; j<=i; j++){
+    //         if(arr[j]<arr[j+1]){
+    //             swap(arr[j],arr[j+1]);
+    //             swapped=1;
+    //         }
+    //     }
+    //     if(swapped==0){
+    //         break;
+    //     }
+    // }
+    // // Print
+    // for(int i=0; i<n; i++){
+    //     cout<<arr[i]<<" ";
+    // }
+
+    // Start sorting from last
     // Bubble Sort
     int arr[100];
     int n;
@@ -40,11 +67,11 @@ int main(){
         cin>>arr[i];
     }
     // Sort
-    for(int i=n-2; i>=0; i--){
+    for(int i=1; i<=n-1; i++){
         bool swapped=0;
-        for(int j=0; j<=i; j++){
-            if(arr[j]<arr[j+1]){
-                swap(arr[j],arr[j+1]);
+        for(int j=n-1; j>=i; j--){
+            if(arr[j]<arr[j-1]){
+                swap(arr[j],arr[j-1]);
                 swapped=1;
             }
         }
