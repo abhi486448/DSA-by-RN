@@ -76,12 +76,12 @@ int main (){
     //   * * *
     //   * *
     //   * 
-    // for(int r=5; r>=1; r--){
-    //     for(int c=1; c<=r; c++){
-    //         cout<<"* ";
-    //     }
-    //     cout<<endl;
-    // }
+    for(int r=5; r>=1; r--){
+        for(int c=1; c<=r; c++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
     
 
     // Q print 
@@ -104,13 +104,13 @@ int main (){
     //   5 4 3
     //   5 4 3 2
     //   5 4 3 2 1
-    for(int r=1; r<=5; r++){
-        for(int c=1; c<=r; c++){
-            int num=5-(c-1);
-            cout<<num<<" ";
-        }
-        cout<<endl;
-    }
+    // for(int r=1; r<=5; r++){
+    //     for(int c=1; c<=r; c++){
+    //         int num=5-(c-1);
+    //         cout<<num<<" ";
+    //     }
+    //     cout<<endl;
+    // }
 
     return 0;
 }
